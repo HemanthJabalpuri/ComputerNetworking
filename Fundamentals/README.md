@@ -22,6 +22,7 @@ After learning these fundamental concepts, you can able to describe
 ### YouTube Playlists
 - [Networking Fundamentals by Practical Networking](https://youtube.com/playlist?list=PLIFyRwBY_4bRLmKfP1KnZA6rZbRHtxmXi)
 - [The Bits and Bytes of Computer Networking from Google Career Certificates](https://youtube.com/playlist?list=PLTZYG7bZ1u6o6wz9EF9tQt1JS-pUmmKTj)
+- [Computer Networks by Neso Academy](https://youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx)
 
 ### Online Courses
 - [Networking Basics from Skills for All](https://skillsforall.com/course/networking-basics?courseLang=en-US) (FREE)

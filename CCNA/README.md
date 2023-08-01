@@ -19,8 +19,8 @@ Here I will include both paid and free options but mainly free one's. As of this
 - [Free Cisco CCNA 200-301 Course from Flackbox](https://youtube.com/playlist?list=PLoL3y5BaIvw2heBYZd0MSUDsDtZRmbKJa)
 - [Cisco CCNA 200-301 175+ Vids Playlist from Keith Barker - The OG of IT](https://youtube.com/playlist?list=PLQQoSBmrXmrysEaVNia7KVwf85qATIi1V)
 
-### Online Courses (Paid)
-- [CBT Nuggets](https://www.cbtnuggets.com/it-training/cisco/ccna)
-- [David Bombal](https://courses.davidbombal.com/p/cisco-ccna-200-301-complete-course-packet-tracer-labs)
-- [Chris Bryant](https://www.udemy.com/course/ccna-200-301-video-boot-camp-with-chris-bryant/)
-- [Kevin Wallace](https://www.oreilly.com/library/view/ccna-200-301/9780136582700/)
+### Websites
+- [PracticalNetworking](https://www.practicalnetworking.net/index/ccna/)
+- [Stydy-CCNA](https://study-ccna.com)
+- [NetworkLessons](https://networklessons.com/cisco/ccna-200-301)
+- [Cisco Certified Expert](https://www.ccexpert.us)

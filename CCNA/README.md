@@ -18,6 +18,11 @@ Here I will include both paid and free options but mainly free one's. As of this
 - [Free CCNA 200-301 Complete Course from Jeremy's IT Lab](https://youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ)
 - [Free Cisco CCNA 200-301 Course from Flackbox](https://youtube.com/playlist?list=PLoL3y5BaIvw2heBYZd0MSUDsDtZRmbKJa)
 - [Cisco CCNA 200-301 175+ Vids Playlist from Keith Barker - The OG of IT](https://youtube.com/playlist?list=PLQQoSBmrXmrysEaVNia7KVwf85qATIi1V)
+- [CCNA in 60 Days from Paul Browning](https://youtube.com/playlist?list=PLCNmoXT8zexnjV3hY-mfD4O8d-BmnG0l7)
+- [Cisco CCNA 200-301 from CertBros](https://youtube.com/playlist?list=PLF1hDMPPRqGxpYdo0ctaa7MxfOi9vjs1u)
+- [1](https://www.youtube.com/playlist?list=PLLJXhnhyaJU8-A1IVTCujpEypHBpWPTdB), [2](https://www.youtube.com/playlist?list=PLLJXhnhyaJU-TenJ7hN5GHuhDUP1Q1a6w), [3](https://www.youtube.com/playlist?list=PLLJXhnhyaJU9GSJTd61XBZV7XrRn4qBWR) from NetITGeeks
+- [1](https://www.youtube.com/playlist?list=PLSaOtWGmiTwvA0BsWFKE8U5j4fA_miNqX), [2](https://www.youtube.com/playlist?list=PLSaOtWGmiTwtAqgRj2wlxsUJA1sXzqSY4), [3](https://www.youtube.com/playlist?list=PLSaOtWGmiTwsmLDCn8gPVHpcW3DEetuYW) from Professor Awwad
+- [Network Direction Channel](https://www.youtube.com/channel/UCtuXekfqj-paqsxtqVNCC2A), since playlists are incomplete
 
 ### Websites
 - [PracticalNetworking](https://www.practicalnetworking.net/index/ccna/)

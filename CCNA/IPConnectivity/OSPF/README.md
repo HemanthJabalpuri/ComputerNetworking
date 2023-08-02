@@ -1,3 +1,6 @@
+### Wikipedia
+- https://en.wikipedia.org/wiki/Open_Shortest_Path_First
+- 
 ### Jeremy
 - [1](https://www.youtube.com/watch?v=pvuaoJ9YzoI), [2](https://www.youtube.com/watch?v=VtzfTA21ht0), [3](https://www.youtube.com/watch?v=3ew26ujkiDI)
 

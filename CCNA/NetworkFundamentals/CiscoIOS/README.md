@@ -1,3 +1,9 @@
+### Wikipedia
+- https://en.m.wikipedia.org/wiki/Cisco_IOS
+
+### Cisco
+- https://www.cisco.com/c/en/us/td/docs/routers/access/800M/software/800MSCG/routconf.html
+
 ### Jeremy
 - [1](https://www.youtube.com/watch?v=IYbtai7Nu2g), [2](https://www.youtube.com/watch?v=SDocmq1c05s)
 

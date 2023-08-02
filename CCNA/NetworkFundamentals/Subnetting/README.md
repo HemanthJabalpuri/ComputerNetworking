@@ -1,6 +1,9 @@
 ### Subnetting
 Recommended way for subnetting is using binary numbers. Since, it is straight forward but somewhat hard at the beginning. But it will be easy afterwards.
 
+### Wikipedia
+- https://en.m.wikipedia.org/wiki/Subnet
+
 ### Jeremy
 - [1](https://www.youtube.com/watch?v=bQ8sdpGQu8c), [2](https://www.youtube.com/watch?v=IGhd-0di0Qo), [3](https://www.youtube.com/watch?v=z-JqCedc9EI)
 

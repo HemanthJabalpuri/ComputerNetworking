@@ -1,3 +1,6 @@
+### Wikipedia
+- https://en.m.wikipedia.org/wiki/Internet_Protocol_version_4
+
 ### Jeremy
 - [1](https://www.youtube.com/watch?v=3ROdsfEUuhs), [2](https://www.youtube.com/watch?v=FiAatRd84XI), [3](https://www.youtube.com/watch?v=aQB22y4liXA)
 

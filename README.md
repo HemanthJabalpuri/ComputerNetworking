@@ -1,8 +1,10 @@
 # ComputerNetworking
 Here I will share resources(including labs) that I am using for learning Computer Networking.
 
-- [Networking Fundamentals](Fundamentals/README.md)
-- [CCNA](CCNA/README.md)
+Go through the folders in this repository to see the resources
+
+- Networking Fundamentals
+- CCNA
 
 ### Discussion
 If you have Github account there are two ways to discuss or contribute

@@ -3,8 +3,8 @@ Here I will share resources(including labs) that I am using for learning Compute
 
 Go through the folders in this repository to see the resources
 
-- Networking Fundamentals
-- CCNA
+- [Networking Fundamentals](https://github.com/HemanthJabalpuri/ComputerNetworking/tree/master/1_Fundamentals)
+- [CCNA](https://github.com/HemanthJabalpuri/ComputerNetworking/tree/master/2_CCNA)
 
 ### Discussion
 If you have Github account there are two ways to discuss or contribute

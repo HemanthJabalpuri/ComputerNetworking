@@ -1,0 +1,225 @@
+Below are not working in Packet Tracer
+- `default-information originate metric 5`
+- directly enabling ospf SVIs works but not entered in config, so use network command
+
+
+ISP1
+----
+hostname ISP1
+ip dhcp excluded-address 100.0.0.1
+ip dhcp pool isp1
+  network 100.0.0.0 255.255.255.252
+interface L0
+  ip address 8.8.8.8 255.255.255.255
+interface g0/0
+  ip address 100.0.0.1 255.255.255.252
+  no shutdown
+
+
+ISP2
+----
+hostname ISP2
+ip dhcp excluded-address 100.0.0.5
+ip dhcp pool isp2
+  network 100.0.0.4 255.255.255.252
+interface L0
+  ip address 8.8.8.8 255.255.255.255
+interface g0/0
+  ip address 100.0.0.5 255.255.255.252
+  no shutdown
+
+
+R1
+----
+hostname R1
+enable secret ccna
+username hemanth secret ccna
+line vty 0 15
+  login local
+access-list 1 permit 192.168.10.0 0.0.0.255
+access-list 1 permit 192.168.20.0 0.0.0.255
+interface g0/0
+  ip address dhcp
+  ip nat outside
+  no shutdown
+interface g0/1
+  ip address 192.168.50.1 255.255.255.0
+  ip nat inside
+  no shutdown
+  ip ospf 1 area 0
+interface L0
+  ip address 192.168.99.1 255.255.255.255
+  ip ospf 1 area 0
+ip route 0.0.0.0 0.0.0.0 g0/0
+router ospf 1
+  default-information originate
+ip nat inside source list 1 interface g0/0 overload
+
+
+R2
+----
+hostname R2
+enable secret ccna
+username hemanth secret ccna
+line vty 0 15
+  login local
+access-list 1 permit 192.168.10.0 0.0.0.255
+access-list 1 permit 192.168.20.0 0.0.0.255
+interface g0/0
+  ip address dhcp
+  ip nat outside
+  no shutdown
+interface g0/1
+  ip address 192.168.60.1 255.255.255.0
+  ip nat inside
+  no shutdown
+  ip ospf 1 area 0
+interface L0
+  ip address 192.168.99.2 255.255.255.255
+  ip ospf 1 area 0
+ip route 0.0.0.0 0.0.0.0 g0/0
+!!!!router ospf 1
+!!!!  default-information originate metric 5
+ip nat inside source list 1 interface g0/0 overload
+
+
+SW4
+----
+hostname SW4
+enable secret ccna
+username hemanth secret ccna
+line vty 0 15
+  login local
+ip routing
+interface L0
+  ip address 192.168.99.3 255.255.255.255
+  ip ospf 1 area 0
+interface f0/24
+  no switchport
+  ip address 192.168.50.2 255.255.255.0
+  ip ospf 1 area 0
+vlan 10
+  name admin
+vlan 20
+  name marketing
+interface range f0/1-2
+  channel-group 1 mode desirable
+interface Po1
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+interface range f0/3,f0/23
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+spanning-tree vlan 10 root primary
+spanning-tree vlan 20 root primary
+interface vlan10
+  ip address 192.168.10.1 255.255.255.0
+  standby version 2
+  standby 10 ip 192.168.10.3
+  standby 10 priority 150
+  standby 10 preempt
+interface vlan20
+  ip address 192.168.20.1 255.255.255.0
+  standby version 2
+  standby 20 ip 192.168.20.3
+  standby 20 priority 150
+  standby 20 preempt
+ip dhcp pool vlan10
+  network 192.168.10.0 255.255.255.0
+  default-router 192.168.10.3
+ip dhcp pool vlan20
+  network 192.168.20.0 255.255.255.0
+  default-router 192.168.20.3
+router ospf 1
+  network 192.168.10.0 0.0.0.255 area 0
+  network 192.168.20.0 0.0.0.255 area 0
+ip route 0.0.0.0 0.0.0.0 192.168.10.2 111
+ip route 0.0.0.0 0.0.0.0 192.168.20.2 111
+
+
+SW5
+----
+hostname SW5
+enable secret ccna
+username hemanth secret ccna
+line vty 0 15
+  login local
+ip routing
+interface L0
+  ip address 192.168.99.4 255.255.255.255
+  ip ospf 1 area 0
+interface f0/24
+  no switchport
+  ip address 192.168.60.2 255.255.255.0
+  ip ospf 1 area 0
+vlan 10
+  name admin
+vlan 20
+  name marketing
+interface range f0/1-2
+  channel-group 1 mode desirable
+interface Po1
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+interface range f0/3,f0/23
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+spanning-tree vlan 10 root secondary
+spanning-tree vlan 20 root secondary
+interface vlan10
+  ip address 192.168.10.2 255.255.255.0
+  standby version 2
+  standby 10 ip 192.168.10.3
+  standby 10 priority 50
+  standby 10 preempt
+interface vlan20
+  ip address 192.168.20.2 255.255.255.0
+  standby version 2
+  standby 20 ip 192.168.20.3
+  standby 20 priority 50
+  standby 20 preempt
+ip dhcp pool vlan10
+  network 192.168.10.0 255.255.255.0
+  default-router 192.168.10.3
+ip dhcp pool vlan20
+  network 192.168.20.0 255.255.255.0
+  default-router 192.168.20.3
+router ospf 1
+  network 192.168.10.0 0.0.0.255 area 0
+  network 192.168.20.0 0.0.0.255 area 0
+ip route 0.0.0.0 0.0.0.0 192.168.60.1 111
+
+
+ASW1
+-----
+hostname ASW1
+vlan 10
+  name admin
+vlan 20
+  name marketing
+interface f0/3
+  switchport mode access
+  switchport access vlan 10
+interface f0/4
+  switchport mode access
+  switchport access vlan 20
+interface range f0/1-2
+  switchport mode trunk
+
+
+ASW2
+-----
+hostname ASW2
+vlan 10
+  name admin
+vlan 20
+  name marketing
+interface f0/3
+  switchport mode access
+  switchport access vlan 10
+interface f0/4
+  switchport mode access
+  switchport access vlan 20
+interface range f0/1-2
+  switchport mode trunk
+
